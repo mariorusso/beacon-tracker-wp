@@ -1,6 +1,6 @@
 # Beacon Tracker for WordPress
 
-WordPress plugin for [beacon-tracker](https://github.com/YOUR-USERNAME/beacon-tracker). It loads the script on the front end, saves daily impression/click counts through a REST endpoint, and shows a report under Tools > Beacon Tracker.
+WordPress plugin for [beacon-tracker](https://github.com/mariorusso/beacon-tracker). It loads the script on the front end, saves daily impression/click counts through a REST endpoint, and shows a report under Tools > Beacon Tracker.
 
 On block themes you don't need to touch templates, posts in Query Loop blocks get `data-track-id="{post ID}"` added automatically. That gives you how often each post was seen in a listing vs how often it got clicked.
 
@@ -34,7 +34,7 @@ add_filter( 'beacon_tracker_tag_query_loops', '__return_false' );
 
 It defaults to the current post ID. You can pass your own id and an optional sub item, `beacon_tracker_attributes( 'promo-banner', 'spring-sale' )`, or use `beacon_tracker_get_attributes()` to get the string instead of echoing it.
 
-Anything else works the same as the plain script: add `data-track-id`, `data-track-item` or `data-track` in your markup. See the [beacon-tracker README](https://github.com/YOUR-USERNAME/beacon-tracker#readme).
+Anything else works the same as the plain script: add `data-track-id`, `data-track-item` or `data-track` in your markup. See the [beacon-tracker README](https://github.com/mariorusso/beacon-tracker#readme).
 
 ## Filters
 
