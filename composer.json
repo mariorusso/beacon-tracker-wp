@@ -1,0 +1,27 @@
+{
+  "name": "beacon-tracker/beacon-tracker-wp",
+  "description": "WordPress plugin for beacon-tracker: loads the script, stores daily impression and click counts, and shows a report.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "phpunit/phpunit": "^9.6",
+    "wp-coding-standards/wpcs": "^3.1"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4.33"
+    },
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "scripts": {
+    "lint": "phpcs",
+    "format": "phpcbf",
+    "test": "phpunit"
+  }
+}
